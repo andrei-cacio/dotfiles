@@ -1,6 +1,7 @@
 # Aliases
 alias te="cd ~/Projects/trubzieditor"
 alias t="cd ~/Projects/Trubzi"
+alias fix-kodi-card="e2fsck -fF -y /dev/mmcblk0p2"
 
 ## ls
 # Detect which `ls` flavor is in use
