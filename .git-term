@@ -15,7 +15,10 @@
 #
 # - Added updating of terminal title
 # Sawyer X, <xsawyerx@cpan.org>
-PROMPT_DIRTRIM=3
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then  
+    . `brew --prefix`/etc/bash_completion
+fi  
 
 _update_prompt () {
   ## Save $? early, we'll need it later
@@ -80,7 +83,7 @@ _update_prompt () {
     fi
   fi
   full_prompt="$ex$_prompt $u$branch $p";
-  export PS1="\[\e]0;\u@\h:\W\\a\]$full_prompt ";
+  export PS1="\[\e]0;\u@\h:\w\\a\]$full_prompt ";
 }
 
 dumb_prompt () {
