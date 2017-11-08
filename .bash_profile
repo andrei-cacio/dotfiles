@@ -3,6 +3,9 @@ alias te="cd ~/Projects/trubzieditor"
 alias t="cd ~/Projects/Trubzi"
 alias fix-kodi-card="e2fsck -fF -y /dev/mmcblk0p2"
 
+# Inline HTTP server
+alias http="python -m SimpleHTTPServer 8000"
+
 ## ls
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
